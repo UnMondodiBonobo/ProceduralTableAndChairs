@@ -26,6 +26,7 @@ components, it renders them and places them in the right place as if they were i
 (based on the surface width and length).
 The table also has a ChairPoolComponent that optimizes requests for chair spawning and
 re-usage at runtime to avoid useless initializations.
+
 For the selection process, I used ITCSelectableObjectInterface which permits to override its
 functions to obtain the expected result, whatever it will be: it’s up to the user to define the
 expected behaviors when one of the interface functions is called. In my project, this
@@ -46,6 +47,7 @@ hit is the floor. Otherwise, the HUD will be called to handle the hit of a table
 show a widget on the screen. The HUD instantiates a MainPage that handles all the widget
 logic, which works only through ViewModels requests since it’s safer than a direct call on the
 objects themselves.
+
 In general, most of the time I prefer to use cache-friendly containers like Arrays, but I also
 inserted a TMap for faster research on keys thanks to the hashmap O(1) search time
 complexity.
