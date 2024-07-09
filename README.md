@@ -12,7 +12,7 @@ arrays of vertices and triangles. The main negative aspect is the fact that, of 
 these components call CreateMeshSection each time one must rendered, so instead of
 having a very complex object that has only 1 section, you find yourself dealing with n
 sections for n components. Luckily every cube is one section with 24 vertices so it’s not a
-problem even in a medium/large scale environment.
+problem even in a medium scale environment.
 
 My first step was to create a ProceduralCubeComponent that inherits from
 ProceduralMeshComponent and I composed a LeggedSurfaceGeometry with these
